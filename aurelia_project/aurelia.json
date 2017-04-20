@@ -151,6 +151,11 @@
           }
         ]
       }
-    ]
+    ],
+    "copyFiles": {
+      "src/assets/frontendcreator.png": "scripts/assets",
+      "src/assets/access-denied.jpg": "scripts/assets",
+      "src/assets/avatar-default.jpg": "scripts/assets"
+    }        
   }
 }
