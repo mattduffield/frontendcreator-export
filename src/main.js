@@ -9,8 +9,8 @@ Promise.config({
 
 export function configure(aurelia) {
   aurelia.use
-    .standardConfiguration()
-    .feature('resources');
+    .standardConfiguration();
+    // .feature('resources');
 
   // aurelia.use.plugin('aurelia-animator-css');
   // if the css animator is enabled, add swap-order="after" to all router-view elements
