@@ -1,0 +1,342 @@
+.frontendcreator-header {
+  background: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%);
+  color: white;
+  /*margin: 0 -20px;*/
+}
+.frontendcreator-heading {
+  color: #0e0e0e;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+.selector-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.selector-card {
+  display: flex;
+  flex-flow: column;
+  padding: 10px;
+  margin: 10px;
+  flex: 0 0 auto;
+
+  height: 200px;
+  width: 250px;
+
+  text-align: center;
+}
+.selector-card-black {
+  border: 1px solid black;
+  border-radius: 5px; 
+  background-color: #0e0e0e;
+  border-color: #7d7e7d;
+  color: white;
+}
+.selector-card .center-none {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  text-decoration: none;
+  user-select: none;
+}
+.selector-card .center-clamp {
+  flex: 1;
+  justify-content: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-decoration: none;
+  user-select: none;
+}
+.selector-card .flex-start {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+}
+.selector-card .flex-end {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+}
+.selector-card-black:hover {
+  color: lightblue;
+}
+.selector-card .flex-start,
+.selector-card .flex-end {
+  color: white;
+}
+.selector-card .flex-start:hover,
+.selector-card .flex-end:hover {
+  color: darkgray;
+}
+.selector-card h3,
+.selector-card p {
+  text-align: center;
+}
+.action {
+  cursor: pointer;
+}
+
+.mappings-table {
+  height: calc(100% - 350px);
+}
+.mappings-table-header {
+  font-weight: bold;
+}
+.mappings-table-body {
+  overflow-y: auto;
+}
+
+.table-head {
+  background-color: black;
+  color: white;
+}
+.table-row:hover {
+  background-color: antiquewhite;
+}
+
+.btn-black {
+  background-color: #0e0e0e;
+  border-color: #7d7e7d;
+  color: white;
+}
+
+.btn-black:hover,
+.btn-black:focus,
+.btn-black.focus,
+.btn-black:active:focus,
+.btn-black.active:focus {
+  color:silver;
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+}
+
+.panel-black {
+  border-color: #0e0e0e;
+  margin-bottom: 0;
+  /*height: 100%;*/
+}
+
+.panel-black > .panel-heading {
+  /*background-color: #0e0e0e;*/
+  background: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%);
+  border-color: #0e0e0e;
+  color: white;
+  user-select: none;  
+}
+
+.panel-black .panel-body.toolbox {
+  height: calc(100% - 50px); /* Subtrack the height of header */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.panel-black .panel-body.query-results {
+  height: calc(100% - 45px); /* Subtrack the height of header */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.panel-black .panel-body.search-results {
+  height: calc(100% - 85px); /* Subtrack the height of header */
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+
+.preview-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+/*
+  width: calc(1440px * 0.25);
+  height: calc(900px * 0.25);
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+*/  
+}
+
+.preview-container .preview-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+/*
+  transform: scale(0.25);
+  transform-origin: 0 0;
+*/
+}
+
+.preview-container .preview-frame:after {
+/*  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;*/
+}
+
+.preview-container .preview-frame iframe {
+  width: 100%;
+  height: 100%;
+/* 
+  width: 1440px;
+  height: 900px;
+*/
+}
+
+.flat {
+  background-color: transparent;
+  border-color: transparent;  
+}
+
+select.form-control {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%23555555%22%20%0A%09%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-261%20145.2%2024%2024%22%20style%3D%22enable-background%3Anew%20-261%20145.2%2024%2024%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M-245.3%2C156.1l-3.6-6.5l-3.7%2C6.5%20M-252.7%2C159l3.7%2C6.5l3.6-6.5%22%2F%3E%0A%3C%2Fsvg%3E");
+  padding-right: 25px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select.form-control:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+.toolbox {
+  padding: 0;
+}
+.toolbox .selector-card {
+  padding-top: 1.5em;
+  margin-bottom: 10px;
+
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  line-height: 1.5em;
+  text-align: center;
+  user-select: none;
+}
+.toolbox .selector-card:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+.toolbox.disabled {
+  background-color: lightgray;
+}
+.toolbox.disabled .selector-card {
+  pointer-events: none;
+  background-color: darkgray;
+}
+.components .screen-card {
+  padding-top: 1.5em;
+  margin-bottom: 10px;
+
+  height: 100px;
+  width: 149px;
+  margin: 10px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+
+  line-height: 1.5em;
+  text-align: center;
+  user-select: none;
+}
+.components .screen-card:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+.components.disabled {
+  background-color: lightgray;
+}
+.components.disabled .selector-card,
+.components.disabled .screen-card {
+  pointer-events: none;
+  background-color: darkgray;
+}
+.property-grid-container.disabled {
+  background-color: lightgray;
+}
+.property-grid-container.disabled .property-grid {
+  pointer-events: none;
+  background-color: darkgray;
+}
+
+.navigation-header {
+  transition: height 350ms linear;
+}
+.navigation-header-visible {
+  height: 310px;
+}
+.navigation-header-hidden {
+  height: 0;
+  overflow: hidden;
+}
+.navigation-header-toggle {
+  display: none;
+  visibility: hidden;
+}
+.navigation-routes {
+  height: calc(100% - 56px);
+  overflow-y: auto;
+}
+.navigation-routes-tall {
+  height: calc(100% - 56px);
+}
+.navigation-routes-short {
+  height: calc(100% - 366px);
+}
+form>fieldset>.form-group>site-map>.site-map {
+  padding: 0;
+}
+.site-map-card {
+  padding: 10px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+.site-map-field-75 {
+  flex: 1 1 75px;
+  margin: 0 5px 0 5px;
+}
+.site-map-field-100 {
+  flex: 1 1 100px;
+  margin: 0 5px 0 5px;
+}
+.site-map-field-200 {
+  flex: 2 1 200px;
+  margin: 0 5px 0 5px;
+}
+.site-map-field-300 {
+  flex: 3 1 200px;
+  margin: 0 5px 0 5px;
+}
+
+.left-pane-transition {
+  transition: flex 350ms linear,
+  min-width 350ms linear, 
+  max-width 350ms linear, 
+  width 350ms linear,
+  min-height 350ms linear,
+  max-height 350ms linear,
+  height 350ms linear;
+  overflow-x: auto;
+}
+.right-pane-transition {
+  transition: flex 350ms linear,
+  min-width 350ms linear, 
+  max-width 350ms linear, 
+  width 350ms linear,
+  min-height 350ms linear,
+  max-height 350ms linear,
+  height 350ms linear;
+  overflow-x: auto;
+}
+

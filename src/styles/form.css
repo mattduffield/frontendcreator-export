@@ -1,0 +1,69 @@
+form label {
+  font-weight: bold;
+}
+
+form [class*="width-"] input:not([type=checkbox]),
+form [class*="width-"] select,
+form [class*="width-"] textarea
+{
+  width: 100%;
+}
+form input {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #555;
+  line-height: 1.4px;
+  padding: 6px 6px 6px 6px;
+}
+form select {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #555;
+  
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%23555555%22%20%0A%09%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-261%20145.2%2024%2024%22%20style%3D%22enable-background%3Anew%20-261%20145.2%2024%2024%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M-245.3%2C156.1l-3.6-6.5l-3.7%2C6.5%20M-252.7%2C159l3.7%2C6.5l3.6-6.5%22%2F%3E%0A%3C%2Fsvg%3E");
+  padding: 4px 25px 4px 6px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+}
+form textarea {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #555;
+  padding: 6px 6px 6px 6px;
+}
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  background-color: cornsilk;
+}
+form input[type=checkbox]:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  background-color: cornsilk;
+}
+form .has-error>input,
+form .has-error>select,
+form .has-error>textarea {
+  border-color: red;
+  background-color: mistyrose;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,0,0,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,0,0,.6);
+}
+form input[disabled],
+form select[disabled],
+form textarea[disabled] {
+  color: rgb(84, 84, 84); 
+  background-color: #eee;  
+}
+form * {
+  box-sizing: border-box;
+}

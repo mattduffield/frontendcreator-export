@@ -1,0 +1,5 @@
+_archive/
+scripts/
+node_modules
+.idea
+.DS_STORE
