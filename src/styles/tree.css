@@ -1,0 +1,117 @@
+/* CSS Tree menu styles */
+ol.tree {
+}
+ol.tree ol { padding-left: 15px; }
+ol.tree li { 
+  position: relative; 
+  margin-left: -15px;
+  list-style: none;
+}
+ol.tree li.field {
+  margin-left: -1px !important;
+}
+ol.tree li input {
+  position: absolute;
+  left: 0;
+  margin-left: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  top: 0;
+}
+ol.tree li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+ol.tree li label {
+  cursor: pointer;
+  display: block;
+}
+ol.tree li input:checked + ol {
+  height: auto;
+}
+ol.tree li input:checked + ol > li { 
+  display: block; 
+}
+ol.tree li input:checked + ol > li:last-child { 
+}
+.components.disabled .tree {
+  pointer-events: none;
+}
+/* Entity Tree */
+ol.entity-tree {
+  padding-left: 15px;
+}
+ol.entity-tree ol { padding-left: 15px; }
+ol.entity-tree li { 
+  position: relative; 
+  margin-left: -15px;
+  list-style: none;
+}
+ol.entity-tree li.field {
+  margin-left: -1px !important;
+}
+ol.entity-tree li input.entity-toggle {
+  position: absolute;
+  left: 0;
+  margin-left: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  top: 0;
+}
+ol.entity-tree li input.entity-toggle + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+ol.entity-tree li .entity-tree-label {
+  cursor: pointer;
+  display: block;
+}
+ol.entity-tree li .entity-tree-label:hover {
+  /*background-color: lightblue;*/
+}
+ol.entity-tree li input.entity-toggle:checked + ol {
+  height: auto;
+}
+ol.entity-tree li input.entity-toggle:checked + ol > li { 
+  display: block; 
+}
+ol.entity-tree li input.entity-toggle:checked + ol > li:last-child { 
+}
+.components.disabled .entity-tree {
+  pointer-events: none;
+}
+/* DOM Tree */
+/*.dom-tree ul { padding-left: 15px; }*/
+ul.dom-tree > li { 
+  position: relative; 
+  margin-left: -15px;
+  list-style: none;
+}
+ul.dom-tree > li > input {
+  position: absolute;
+  left: 0;
+  margin-left: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  top: 0;
+}
+ul.dom-tree > li > input ~ ul {
+  height: 0;
+}
+ul.dom-tree > li > input ~ ul > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+ul.dom-tree > li > label {
+  cursor: pointer;
+  display: block;
+}
+ul.dom-tree > li > input:checked ~ ul {
+  height: auto;
+}
+ul.dom-tree > li > input:checked ~ ul > li { 
+  display: block; 
+}
+.dom-tree label.tree-label:before { content: '+'; }
+.dom-tree :checked ~ label.tree-label:before { content: '–'; }
+
